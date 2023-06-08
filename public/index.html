@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Index</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/126ec85f34.js" crossorigin="anonymous"></script>
+    <link href='https://fonts.googleapis.com/css?family=Alegreya Sans SC' rel='stylesheet'>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="scripts/main.js"></script>
+</head>
+<body>
+<!-- Modal -->
+<div class="modal">
+    <div class="modal-content">
+        <div class="text-container">
+            <div>
+                <h1>This is my dog Remmington!</h1>
+                <p> Remmy was rescued from the Pitt country animal shelter, and despite that stink face he is the sweetest dog I've ever met.
+                    Unfortunately the Pitt county shelter is a kill shelter, meaning every animal in there is on their last chance.
+                    Adopting a pet or simply donating any amount could save an animals life, and I know that would make me and Remmy very happy
+                    (and maybe even help cure Remmy's stink face).
+                    Please consider visiting one of the links provided below and helping to make a difference today.
+                </p>
+            </div>
+        </div>
+        <div class="link-container">
+            <a href="https://www.pittcountync.gov/597/Adoptable-Animals" target="_blank"><i class="fa-solid fa-shield-dog"></i>Adoptable Animals</a>
+            <a href="https://www.gofundme.com/f/animal-shelter-donation-drive-pitt-county?utm_campaign=p_nacp+share-sheet&utm_medium=sms&utm_source=customer" target="_blank"><i class="fa-solid fa-hand-holding-dollar"></i>Donation Link</a>
+        </div>
+        <span class="close-button">x</span>
+        <img src="pics/remmy-removebg-2.png" alt="me">
+    </div>
+</div>
+<!-- Navbar -->
+<div class="top-wrapper">
+    <div id="grad-bar" class="gradient-bar"></div>
+    <div id="navbar" class="navbar">
+        <div id="nav-item" class="nav-item">
+            <img src="pics/navbar_pic.png" alt="me">
+            <h1>Robert Johnson</h1>
+            <a href="#navbar">Home</a>
+            <a href="#">About</a>
+            <a href="#">Education</a>
+            <a href="#">Contact Me</a>
+            <div id="icon" class="icon">
+                <a href="https://github.com/Robertlj99" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a class="trigger" href="#"><i class="fa-solid fa-paw"></i></a>
+            </div>
+            <div id="icon2" class="icon">
+                <a href="#" id="light" onclick="setTheme('light')"><i class="fa-solid fa-sun"></i></a>
+                <a href="#" id="dark" onclick="setTheme('dark-theme')"><i class="fa-solid fa-moon"></i></a>
+                <a href="#" id="matrix" onclick="setTheme('matrix-theme')"><i class="fa-solid fa-user-secret"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Sections -->
+<section id="home" class="home">
+    <div class="home-container">
+        <div>
+            <h1>Robert <br> Johnson</h1>
+            <p>B.S. Computer Science <br></p>
+            <p>M.S. Computer Science Student</p>
+        </div>
+        <img src="pics/bob2.png" alt="actually me">
+    </div>
+</section>
+<section>
+    <h1>About Me</h1>
+</section>
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+        apiKey: "AIzaSyA8dHK8_LAUH_SNXBBnYd1uZO4I3JlX8wY",
+        authDomain: "personal-website-da3e2.firebaseapp.com",
+        projectId: "personal-website-da3e2",
+        storageBucket: "personal-website-da3e2.appspot.com",
+        messagingSenderId: "141570316431",
+        appId: "1:141570316431:web:b56d51f9831797e241b8fa",
+        measurementId: "G-BG3609M6LQ"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+</script>
+</body>
+</html>
